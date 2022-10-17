@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*.ts", "tests/**/*.ts", "scripts/**/*.ts", "tests/.test.ts", "tests/.test.ts"],
+  "include": ["src/**/*.ts", "tests/**/*.ts", "scripts/**/*.ts"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig.json to read more about this file */
 

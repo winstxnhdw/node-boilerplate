@@ -2,7 +2,7 @@ import { build } from 'esbuild'
 import { rm, mkdir, cp } from 'fs/promises'
 
 const build_directory = 'dist'
-const external_modules = ['@napi-rs']
+const external_modules: string[] = []
 
 async function main(args: string[]) {
   await rm(build_directory, { recursive: true, force: true })

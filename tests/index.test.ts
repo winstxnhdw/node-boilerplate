@@ -1,5 +1,5 @@
 import { expect } from 'chai'
 
 describe('', () => {
-  it('', () => expect(() => {}))
+  it('', () => expect(() => true))
 })
