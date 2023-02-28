@@ -17,6 +17,11 @@ jobs:
       - name: Remove unnecessary workflow files
         run: rm -r .github
 
+      - name: Rename README title
+        env:
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
+        run: sed -i "1s/.*/# $REPOSITORY_NAME/" README.md
+
       - name: Reword initial commit
         run: |
           git config user.email "github-actions[bot]@users.noreply.github.com"
