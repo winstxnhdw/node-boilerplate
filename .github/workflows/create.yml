@@ -4,9 +4,10 @@ name: Create
 on: [create]
 
 jobs:
-  create:
+  Create:
     if: ${{ !github.event.repository.is_template }}
     runs-on: ubuntu-latest
+    
     permissions:
       contents: write
 
