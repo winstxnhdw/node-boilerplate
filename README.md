@@ -1,6 +1,6 @@
 # node-boilerplate
 
-A no-compromise boilerplate for Node.js projects willing to be on the cutting edge of ECMAScript and Node.
+A no-compromise boilerplate for projects willing to be on the cutting edge of ECMAScript and Node.
 
 ## Commands
 
