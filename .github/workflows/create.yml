@@ -4,7 +4,7 @@ name: Create
 on: [create]
 
 jobs:
-  Create:
+  create:
     if: ${{ !github.event.repository.is_template }}
     runs-on: ubuntu-latest
     
