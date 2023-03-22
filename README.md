@@ -40,7 +40,7 @@ Run your tests with hot reloading.
 yarn test
 ```
 
-Run your tests without hot reloading. For running during your CI pipeline(s).
+Run your tests without hot reloading. For testing in a CI pipeline.
 
 ```bash
 yarn testci
