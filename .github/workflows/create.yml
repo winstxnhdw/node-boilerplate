@@ -3,13 +3,13 @@ name: Create
 
 on: [create]
 
+permissions:
+  contents: write
+
 jobs:
   create:
     if: ${{ !github.event.repository.is_template }}
     runs-on: ubuntu-latest
-    
-    permissions:
-      contents: write
 
     steps:
       - name: Checkout repository
