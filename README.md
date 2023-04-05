@@ -6,12 +6,6 @@ A no-compromise boilerplate for projects willing to be on the cutting edge of EC
 
 ### Setup
 
-Upgrade all packages to latest.
-
-```bash
-yarn upgrade --latest
-```
-
 Run your application.
 
 ```bash
