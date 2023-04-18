@@ -1,8 +1,8 @@
 import type {
-  Handler,
-  APIGatewayProxyResultV2,
+  APIGatewayEventRequestContextV2,
   APIGatewayProxyEventV2WithRequestContext,
-  APIGatewayEventRequestContextV2
+  APIGatewayProxyResultV2,
+  Handler
 } from 'aws-lambda'
 
 export const handler: Handler = async (
