@@ -6,6 +6,12 @@ A no-compromise boilerplate for projects willing to be on the cutting edge of EC
 
 ### Setup
 
+Install all dependencies.
+
+```bash
+yarn
+```
+
 Run your application.
 
 ```bash
