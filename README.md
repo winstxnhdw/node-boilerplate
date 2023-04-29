@@ -29,7 +29,7 @@ yarn build
 Human-readable bundle of your Node application. For debugging purposes.
 
 ```bash
-yarn testbuild
+yarn build test
 ```
 
 ### Test
