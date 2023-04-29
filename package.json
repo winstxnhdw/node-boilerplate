@@ -1,12 +1,13 @@
 {
   "scripts": {
     "lint": "eslint .",
-    "dev": "node -r @swc-node/register src/index.ts",
+    "dev": "node -r dotenv/config -r @swc-node/register src/index.ts",
     "build": "node -r @swc-node/register scripts/build.ts",
-    "test": "mocha --require @swc-node/register --extensions ts --watch --watch-files src 'tests/**/*.test.ts'"
+    "testbuild": "node -r @swc-node/register scripts/build.ts test",
+    "test": "mocha -r @swc-node/register --extensions ts --watch --watch-files src 'tests/**/*.test.ts'",
+    "testci": "mocha -r @swc-node/register --extensions ts 'tests/**/*.test.ts'"
   },
   "dependencies": {
-    "dotenv": "^16.0.3",
     "envalid": "^7.3.1"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "@typescript-eslint/eslint-plugin": "^5.59.1",
     "@typescript-eslint/parser": "^5.59.1",
     "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
     "esbuild": "^0.17.18",
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.8.0",
