@@ -11,9 +11,13 @@ async function main(args: string[]) {
 
   const results = await Promise.allSettled(
     external_modules.map((module) =>
-      cp(`node_modules/${module}`, `${build_directory}/node_modules/${module}`, {
-        recursive: true
-      })
+      cp(
+        `node_modules/${module}`,
+        `${build_directory}/node_modules/${module}`,
+        {
+          recursive: true,
+        }
+      )
     )
   )
 
@@ -28,8 +32,8 @@ async function main(args: string[]) {
     bundle: true,
     minify: args.slice(2)[0] !== 'test',
     platform: 'node',
-    external: external_modules
+    external: external_modules,
   })
 }
 
-main(argv)
+void main(argv)
