@@ -9,13 +9,13 @@ A no-compromise boilerplate for projects willing to be on the cutting edge of EC
 Install all dependencies.
 
 ```bash
-yarn
+bun install
 ```
 
 Run your application.
 
 ```bash
-yarn dev
+bun run dev
 ```
 
 ### Build
@@ -23,13 +23,13 @@ yarn dev
 Minify and bundle the Node application with [esbuild](https://esbuild.github.io/).
 
 ```bash
-yarn build
+bun run build
 ```
 
 Human-readable bundle of your Node application. For debugging purposes.
 
 ```bash
-yarn build test
+bun run build test
 ```
 
 ### Test
@@ -37,11 +37,11 @@ yarn build test
 Run your tests with hot reloading.
 
 ```bash
-yarn test
+bun run test
 ```
 
 Run your tests without hot reloading. For testing in a CI pipeline.
 
 ```bash
-yarn testci
+bun run testci
 ```
