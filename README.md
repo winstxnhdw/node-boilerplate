@@ -15,7 +15,7 @@ bun install
 Run your application.
 
 ```bash
-bun run dev
+bun dev
 ```
 
 ### Build
@@ -29,7 +29,7 @@ bun run build
 Human-readable bundle of your Node application. For debugging purposes.
 
 ```bash
-bun run build test
+bun run build -t
 ```
 
 ### Test
@@ -43,5 +43,5 @@ bun run test
 Run your tests without hot reloading. For testing in a CI pipeline.
 
 ```bash
-bun run testci
+bun test
 ```
