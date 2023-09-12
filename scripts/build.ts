@@ -1,6 +1,5 @@
 import { build } from 'esbuild'
 import { cp, mkdir, rm } from 'fs/promises'
-import { argv } from 'process'
 
 const build_directory = 'dist'
 const external_modules = [] as string[]
@@ -34,4 +33,4 @@ async function main(args: string[]) {
   })
 }
 
-void main(argv)
+void main(Bun.argv)
