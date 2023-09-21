@@ -6,7 +6,7 @@
     "test": "bun test --watch"
   },
   "dependencies": {
-    "envalid": "^7.3.1",
+    "envalid": "^8.0.0",
     "tslib": "^2.6.2"
   },
   "devDependencies": {
