@@ -15,4 +15,4 @@ updates:
       timezone: Asia/Singapore
     groups:
        dependencies:
-          patterns: '*'
+          patterns: ['*']
