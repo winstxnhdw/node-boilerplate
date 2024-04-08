@@ -1,5 +1,5 @@
+import { cp, mkdir, rm } from 'node:fs/promises'
 import { build } from 'esbuild'
-import { cp, mkdir, rm } from 'fs/promises'
 
 const build_directory = 'dist'
 const external_modules = [] as string[]
@@ -18,10 +18,10 @@ async function main(args: string[]) {
     ),
   )
 
-  results.forEach((result) => {
-    if (result.status !== 'rejected') return
+  for (const result of results) {
+    if (result.status !== 'rejected') continue
     console.error(result.reason)
-  })
+  }
 
   await build({
     entryPoints: ['src/index.ts'],
