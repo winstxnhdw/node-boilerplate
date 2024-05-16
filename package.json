@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
-    "@types/aws-lambda": "^8.10.137",
+    "@types/aws-lambda": "^8.10.138",
     "bun-types": "^1.1.8",
     "esbuild": "^0.21.3",
     "typescript": "^5.4.5"
