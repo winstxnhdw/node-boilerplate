@@ -12,7 +12,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.7.3",
     "@types/aws-lambda": "^8.10.138",
-    "bun-types": "^1.1.11",
+    "bun-types": "^1.1.12",
     "esbuild": "^0.21.4",
     "typescript": "^5.4.5"
   }
