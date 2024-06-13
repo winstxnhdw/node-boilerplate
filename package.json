@@ -10,10 +10,12 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.8.1",
+    "@biomejs/biome": "^1.8.1",
     "@types/aws-lambda": "^8.10.138",
     "@types/bun": "latest",
-    "esbuild": "^0.21.5",
+    "esbuild": "^0.21.5"
+  },
+  "peerDependencies": {
     "typescript": "latest"
   }
 }
