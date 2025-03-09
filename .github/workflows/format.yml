@@ -1,0 +1,15 @@
+name: Format
+
+on:
+  push:
+    paths:
+      - .github/workflows/format.yml
+      - '**.json'
+      - '**.ts'
+
+permissions:
+  contents: write
+
+jobs:
+  format:
+    uses: winstxnhdw/actions/.github/workflows/format-bun.yml@main
