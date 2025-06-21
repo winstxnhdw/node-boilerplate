@@ -1,14 +1,14 @@
-import { cp, mkdir, rm } from 'node:fs/promises'
-import { build } from 'esbuild'
+import { cp, mkdir, rm } from 'node:fs/promises';
+import { build } from 'esbuild';
 
-const build_directory = 'dist'
-const external_modules = [] as string[]
+const build_directory = 'dist';
+const external_modules = [] as string[];
 
 async function main(args: string[]) {
-  const arg = args.slice(2)[0]
+  const arg = args.slice(2)[0];
 
-  await rm(build_directory, { recursive: true, force: true })
-  await mkdir(build_directory)
+  await rm(build_directory, { recursive: true, force: true });
+  await mkdir(build_directory);
 
   const results = await Promise.allSettled(
     external_modules.map((module) =>
@@ -16,11 +16,11 @@ async function main(args: string[]) {
         recursive: true,
       }),
     ),
-  )
+  );
 
   for (const result of results) {
-    if (result.status !== 'rejected') continue
-    console.error(result.reason)
+    if (result.status !== 'rejected') continue;
+    console.error(result.reason);
   }
 
   await build({
@@ -30,7 +30,7 @@ async function main(args: string[]) {
     minify: arg !== '--test' && arg !== '-t',
     platform: 'node',
     external: external_modules,
-  })
+  });
 }
 
-void main(Bun.argv)
+void main(Bun.argv);
