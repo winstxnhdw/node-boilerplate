@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.2.5",
-    "@types/aws-lambda": "8.10.153",
+    "@types/aws-lambda": "8.10.155",
     "@types/bun": "latest",
     "esbuild": "0.25.10"
   },
