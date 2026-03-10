@@ -1,0 +1,12 @@
+name: Scaffold
+
+on:
+  push:
+    paths: [.github/workflows/scaffold.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  create:
+    uses: winstxnhdw/actions/.github/workflows/scaffold.yml@main
