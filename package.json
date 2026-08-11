@@ -13,7 +13,7 @@
     "@biomejs/biome": "2.5.7",
     "@types/aws-lambda": "8.10.162",
     "@types/bun": "latest",
-    "esbuild": "0.28.1"
+    "esbuild": "0.28.2"
   },
   "peerDependencies": {
     "typescript": "latest"
