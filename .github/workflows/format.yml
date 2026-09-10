@@ -4,12 +4,12 @@ on:
   push:
     paths:
       - .github/workflows/format.yml
-      - '**.json'
-      - '**.ts'
+      - "**.json"
+      - "**.ts"
 
 permissions:
   contents: write
 
 jobs:
   format:
-    uses: winstxnhdw/actions/.github/workflows/format-bun.yml@f43de6b5804c7609cb6f13864e2d18a70301469e # main
+    uses: winstxnhdw/actions/.github/workflows/format-biome.yml@main
