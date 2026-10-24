@@ -10,7 +10,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.15",
+    "@biomejs/biome": "2.6.2",
     "@types/aws-lambda": "8.10.164",
     "@types/bun": "latest",
     "esbuild": "0.28.2"
